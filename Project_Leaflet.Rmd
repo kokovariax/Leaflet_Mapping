@@ -1,0 +1,17 @@
+---
+title: "Project_Leaflet"
+author: "UKACHUKWU CHRISTIAN CHINWEIKE"
+date: "16 September 2019"
+output: html_document
+---
+
+##THIS IS THE INTERACTIVE MAP THAT WOULD LEAD YOU TO MY HOUSE
+```{r, echo=FALSE}
+library(leaflet)
+map_project <-leaflet() %>% 
+  addTiles() %>%
+  
+  addMarkers(lat = 4.8156,lng = 7.0498,popup = "UKACHUKWU'S PORT HARCOURT HOME")
+
+map_project
+```
